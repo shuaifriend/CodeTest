@@ -1,0 +1,116 @@
+@import "../../common/icon.css";
+
+
+.active-text {
+  font-size: 14px;
+  color: #279abf;
+  padding: 0 5px;
+}
+.create-todo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #deeff5;
+  box-shadow: -1px 1px 5px 2px rgba(0,0,0,.1), 0px 0px 0px 2px #FFFFFF inset;
+}
+.icon-add1{
+  font-size: 30px;
+  color: #add8e6;
+  transition: all .3s;
+}
+.icon-add1.create-todo-active {
+  transform: rotate(135deg);
+}
+.create-content{
+  position: fixed;
+  bottom: 95px;
+  left: 20px;
+  right: 20px;
+  transition: all .3s;
+  opacity: 0;
+  transform: scale(0) translateY(200%);
+}
+.create-content.create--show{
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+.create-content-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 95px;
+  left: 20px;
+  right: 20px;
+  padding: 0 15px;
+  padding-right: 0;
+  border-radius: 50px;
+  background-color: #DEEFF5;
+  box-shadow: -1px 1px 5px 2px rgba(0,0,0,.1), -1px 1px 1px 0 #FFFFFF inset;
+  z-index: 2;
+}
+.create-input{
+  width: 100%;
+  padding-right: 15px;
+  color: #add8e6;
+}
+.create-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  height: 50px;
+  width: 80px;
+  border-radius: 50px;
+  font-size: 16px;
+  color: #88d4ec;
+  box-shadow: -2px 0 2px 1px rgba(0,0,0,.1);
+}
+.create-content::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -8px;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  background-color: #DEEFF5;
+  transform: rotate(45deg);
+  box-shadow: 1px 1px 5px 2px rgba(0,0,0,.1);
+  z-index: -1;
+}
+.create-content-box::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -8px;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  background-color: #DEEFF5;
+  transform: rotate(45deg);
+}
+.default{
+  padding-top: 100px;
+}
+.image-default{
+  display: flex;
+  justify-content: center;
+}
+.image-default image {
+  width: 100%;
+}
+.default-info{
+  text-align: center;
+  font-size: 14px;
+  color: #CCCCCC;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DatePicker-imooc</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            width:800px;
+            margin: 0 auto;
+            height: 450px;
+        }
+        .datepicker {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 5px;
+            height: 24px; 
+            line-height: 24px;
+            width: 230px;
+        }
+        .datepicker:focus {
+            outline: 0 none;
+            border: 1px solid #1abc9c;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript DatePicker组件</h1>
+    <p>
+        源码：<a href="https://github.com/dunizb/CodeTest/tree/master/JavaScript/DatePicker" target="_blank" rel="noopener noreferrer">Github</a>
+    </p>
+    <input type="text" class="datepicker" placeholder="请输入日期"/>
+    <!-- <div class="ui-datepicker-wrapper"></div> -->
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        // let monthDate = datepicker.getMonthData(2016, 12);
+        // console.log(monthDate)
+        // const rootDom = document.querySelector('.datepicker')
+        datepicker.init('.datepicker')
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "todo",
+  "usingComponents": {
+    "todo-items": "/components/todo-items/todo-items",
+    "todo-header": "/components/todo-header/todo-header"
+  }
+}
